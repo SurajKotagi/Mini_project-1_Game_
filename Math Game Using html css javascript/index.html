@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To the End</title>
+
+    <!-- linking the css file to the html -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- linking the bootstrap to html -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <!-- linking google fonts apn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sacramento&family=Source+Code+Pro:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <!-- THE START OF BODY -->
+  <body>
+    <!-- main headline in the page -->
+    <div class="container headline">
+      <h1 id="headText">To the end</h1>
+    </div>
+    <!-- seperating the page to two parts -->
+    <div class="container main_big_container">
+      <div class="row">
+        <div class="col-6 leftSection">
+          <h1 id="namePlayerOne">Player 1</h1>
+          <br />
+          <h1 id="playerOneLevel">level 0</h1>
+          <br />
+          <p class="question_font" id="num1">First Number</p>
+          <br />
+          <p class="question_font">+</p>
+          <br />
+          <p class="question_font" id="num2">Second Number</p>
+          <br />
+          <p class="question_font">=</p>
+          <br />
+          <form>
+            <input
+              class="form-control-lg input_button border-warning"
+              id="ans1"
+              type="text"
+            /><br /><br />
+            <button
+              type="button"
+              class="btn btn-outline-warning btn-lg"
+              onclick="checkAnsPlayerOne()"
+            >
+              Check
+            </button>
+          </form>
+          <p class="question_font fonty">status</p>
+          <p class="question_font" id="statusOfPlayerOne"></p>
+          <br />
+        </div>
+        <div class="col-6 rightSection">
+          <h1 id="namePlayerTwo">Player 2</h1>
+          <br />
+          <h1 id="playerTwoLevel">level 0</h1>
+          <br />
+          <p class="question_font" id="num3">First Number</p>
+          <br />
+          <p class="question_font">+</p>
+          <br />
+          <p class="question_font" id="num4">Second Number</p>
+          <br />
+          <p class="question_font">=</p>
+          <br />
+          <form>
+            <input
+              class="form-control-lg input_button border-warning"
+              id="ans2"
+              type="text"
+            /><br /><br />
+            <button
+              type="button"
+              class="btn btn-outline-warning btn-lg"
+              onclick="checkAnsPlayerTwo()"
+            >
+              Check
+            </button>
+          </form>
+          <p class="question_font fonty">status</p>
+          <p class="question_font" id="statusOfPlayerTwo"></p>
+          <br />
+        </div>
+      </div>
+    </div>
+    <!-- container which has start button -->
+    <div class="container">
+      <button
+        type="button"
+        class="btn btn-outline-dark btn-lg"
+        id="startButton"
+        onclick="startOfGame()"
+      >
+        Start
+      </button>
+    </div>
+
+    <!-- linking bootstrap javascript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+    <!-- linking jquerry javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- linking the javascript to html -->
+    <script src="index.js"></script>
+  </body>
+</html>

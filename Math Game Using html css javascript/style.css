@@ -1,0 +1,41 @@
+
+.headline{
+    text-align: center;
+    height: 130px;
+}
+#headText{
+    font-size: 5rem;
+    padding-top: 20px;
+    /* padding-bottom: 0px; */
+    font-family: 'Sacramento', cursive;
+    /* font-weight: 3rem; */
+    color: #4B6587;
+}
+.container{
+    text-align: center;
+    /* background-color: #E8F6EF; */
+}
+.main_big_container{
+    height: 750px;
+}
+.col{
+    height: 800px;
+}
+.input_button{
+    background-color: #F7F6F2;
+}
+.question_box{
+    font-size: 1.5rem;
+}
+.question_font{
+    font-size: 2rem;
+    color: #A12568;
+}
+h1{
+    font-family: 'Source Code Pro', monospace;
+}
+.fonty{
+    font-family: 'Source Code Pro', monospace;
+    color: #5E454B ;
+}
+
